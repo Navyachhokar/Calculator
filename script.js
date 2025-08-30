@@ -1,3 +1,6 @@
+let displayNumOne ;
+let displayNumTwo;
+let displayOperator;
 
 function add(num1,num2) {
     return num1 + num2;
