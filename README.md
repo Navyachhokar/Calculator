@@ -45,7 +45,7 @@ Calculator/
 
 ## 📸 Demo
 
-![Calculator Gif][calculator_gif.gif]
+![Calculator Gif](calculator_gif.gif)
 
 ---
 
