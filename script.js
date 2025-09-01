@@ -68,7 +68,16 @@ buttons.forEach((button) => {
             display.textContent = '0';
         }
 
-      
+        else if (value === 'del') {
+            currentInput = currentInput.slice(0, -1);
+            display.textContent = currentInput || '0';
+            if (displayOperator) {
+                currentInput = String(displayNumOne || '');
+                displayNumOne = '';
+                displayOperator = '';
+                display.textContent = currentInput || '0';
+            }
+        }
     });
 });
 
