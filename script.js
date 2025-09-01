@@ -40,6 +40,18 @@ buttons.forEach((button) => {
             currentInput = "";
         }
 
+        else if (value === '=') {
+            if (displayNumOne !== "" && displayOperator && currentInput !== "") {
+                displayNumTwo = currentInput;
+                const result = operate(displayNumOne, displayNumTwo, displayOperator);
+                display.textContent = formatResult(result);
+                displayNumOne = result;
+                displayNumTwo = "";
+                currentInput = "";
+                resultDisplayed = true;
+            }
+        }
+
 
       
     });
