@@ -25,6 +25,13 @@ buttons.forEach((button) => {
             display.textContent += currentInput;
         }
 
+        else if (value === '.') {
+            if (!currentInput.includes('.')) {
+                currentInput += '.';
+                display.textContent = currentInput;
+            }
+        }
+
         else if (operators.includes(value)) {
             if (displayNumOne === "") {
                 displayNumOne = currentInput;
@@ -52,6 +59,14 @@ buttons.forEach((button) => {
             }
         }
 
+        else if (value === 'C') {
+            displayNumOne = "";
+            displayNumTwo = "";
+            displayOperator = "";
+            currentInput = "";
+            resultDisplayed = false;
+            display.textContent = '0';
+        }
 
       
     });
