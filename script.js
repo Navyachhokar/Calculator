@@ -110,3 +110,9 @@ function operate(num1, num2, operator) {
     }
 }
 
+function formatResult(result) {
+    if (typeof result === "number") {
+        return Math.round(result * 1000) / 1000; 
+    }
+    return result; 
+}
